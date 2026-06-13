@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akogo Yawo Grace — Developpeur Web Full-stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Akogo Yawo Grace</a>
+      <div class="nav-links">
+        <a href="#a-propos">A propos</a>
+        <a href="#competences">Competences</a>
+        <a href="#projets">Projets</a>
+        <a href="#formation">Formation</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Basculer mode sombre">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#a-propos">A propos</a>
+    <a href="#competences">Competences</a>
+    <a href="#projets">Projets</a>
+    <a href="#formation">Formation</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-toggle" id="themeToggleMobile" aria-label="Basculer mode sombre">
+      <i class="fas fa-moon"></i>
+      <span>Mode sombre</span>
+    </button>
+  </div>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-greeting">Bonjour, je suis</p>
+          <h1 class="hero-name">Akogo Yawo Grace</h1>
+          <div class="hero-typing">
+            <span id="typingText"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-desc">
+            Je construis des applications web et mobiles qui repondent
+            a des besoins reels. Etudiant a DEFITECH, Lome.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-outline">Me contacter</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/akogoyawograce" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/developpement-dev" target="_blank" aria-label="GitHub projets"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yawo-grace-akogo-91075b29a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:yawograceakogo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== A PROPOS ===== -->
+    <section id="a-propos">
+      <div class="container">
+        <h2 class="section-title reveal">A propos</h2>
+        <div class="apropos-grid reveal">
+          <div class="apropos-text">
+            <p>
+              Je suis Akogo Yawo Grace, etudiant en Genie Logiciel a l'Institut
+              Polytechnique DEFITECH de Lome. Ce qui me distingue, c'est que je
+              ne me contente pas d'apprendre en cours — je construis des choses
+              reelles. Je travaille sur une plateforme EdTech pour orienter les
+              bacheliers togolais, et sur un MVP Health Tech pour geolocaliser
+              les structures de sante au Togo. Je crois que les meilleures
+              solutions tech africaines viendront de gens qui comprennent a la
+              fois la technologie et le contexte local.
+            </p>
+          </div>
+          <div class="apropos-stats">
+            <div class="stat-card">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Projets en cours</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">4</div>
+              <div class="stat-label">Projets realises</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Annees de formation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPETENCES ===== -->
+    <section id="competences">
+      <div class="container">
+        <h2 class="section-title reveal">Competences techniques</h2>
+
+        <div class="skills-group reveal">
+          <div class="skills-label">Front-end</div>
+          <div class="skills-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skills-group reveal">
+          <div class="skills-label">Back-end</div>
+          <div class="skills-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skills-group reveal">
+          <div class="skills-label">Bases de donnees</div>
+          <div class="skills-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skills-group reveal">
+          <div class="skills-label">DevOps et Outils</div>
+          <div class="skills-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skills-group reveal">
+          <div class="skills-label">Methodes</div>
+          <div class="skills-tags">
+            <span class="skill-tag">UML</span>
+            <span class="skill-tag">Agile/Scrum</span>
+            <span class="skill-tag">Cahier des charges</span>
+            <span class="skill-tag">Zabbix/Nagios</span>
+          </div>
+        </div>
+
+        <div class="skills-group reveal">
+          <div class="skills-label">Langues</div>
+          <div class="skills-tags">
+            <span class="skill-tag">Francais (courant)</span>
+            <span class="skill-tag">Anglais (intermediaire)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section id="projets">
+      <div class="container">
+        <h2 class="section-title reveal">Mes projets</h2>
+        <div class="projets-grid">
+
+          <article class="projet-card reveal">
+            <div class="projet-topbar"></div>
+            <div class="projet-body">
+              <span class="projet-badge badge-en-cours">En cours</span>
+              <h3 class="projet-title">ACTIV EDUCATION</h3>
+              <p class="projet-role">Developpeur Front-end</p>
+              <p class="projet-desc">
+                Plateforme web et mobile d orientation professionnelle pour les
+                bacheliers togolais, avec mise en relation mentors et etudiants.
+              </p>
+              <div class="projet-techs">
+                <span class="projet-tech">Flutter</span>
+                <span class="projet-tech">React</span>
+                <span class="projet-tech">Tailwind CSS</span>
+                <span class="projet-tech">Git</span>
+              </div>
+              <a href="https://github.com/developpement-dev" target="_blank" class="projet-link" aria-label="Voir sur GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="projet-card reveal">
+            <div class="projet-topbar"></div>
+            <div class="projet-body">
+              <span class="projet-badge badge-en-cours">En cours</span>
+              <h3 class="projet-title">D-CODEX — Health Tech</h3>
+              <p class="projet-role">Developpeur Back-end</p>
+              <p class="projet-desc">
+                MVP de geolocalisation des structures de sante au Togo,
+                developpe avec GROUPE REUSSITE PLUS SARL. API REST, methode Agile.
+              </p>
+              <div class="projet-techs">
+                <span class="projet-tech">Node.js</span>
+                <span class="projet-tech">MySQL</span>
+                <span class="projet-tech">Docker</span>
+                <span class="projet-tech">API REST</span>
+              </div>
+              <a href="https://github.com/developpement-dev" target="_blank" class="projet-link" aria-label="Voir sur GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="projet-card reveal">
+            <div class="projet-topbar"></div>
+            <div class="projet-body">
+              <span class="projet-badge badge-termine">Termine</span>
+              <h3 class="projet-title">Mini-NOC</h3>
+              <p class="projet-role">Concepteur</p>
+              <p class="projet-desc">
+                Systeme de supervision reseau avec tableau de bord, alertes
+                automatiques et simulation de resolution d incidents.
+              </p>
+              <div class="projet-techs">
+                <span class="projet-tech">Zabbix</span>
+                <span class="projet-tech">Nagios</span>
+                <span class="projet-tech">Linux</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="projet-card reveal">
+            <div class="projet-topbar"></div>
+            <div class="projet-body">
+              <span class="projet-badge badge-termine">Termine</span>
+              <h3 class="projet-title">Modernisation SI — Universite Mokpokpo</h3>
+              <p class="projet-role">Analyste et redacteur</p>
+              <p class="projet-desc">
+                Cahier des charges complet pour numeriser la gestion des
+                logements universitaires — portail candidature, paiement mobile
+                (Flooz, Mixx, Xpress), back-office admin.
+              </p>
+              <div class="projet-techs">
+                <span class="projet-tech">UML</span>
+                <span class="projet-tech">Analyse systeme</span>
+                <span class="projet-tech">Cahier des charges</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMATION ===== -->
+    <section id="formation">
+      <div class="container">
+        <h2 class="section-title reveal">Formation</h2>
+        <div class="timeline reveal">
+
+          <div class="timeline-entry">
+            <div class="timeline-dot"></div>
+            <div class="timeline-title">Licence Professionnelle — Genie Logiciel</div>
+            <div class="timeline-institution">Institut Polytechnique DEFITECH, Lome, Togo</div>
+            <div class="timeline-date">2023 — En cours</div>
+            <div class="timeline-detail">
+              Developpement web et mobile, systemes d information, reseaux,
+              bases de donnees, genie logiciel
+            </div>
+          </div>
+
+          <div class="timeline-entry">
+            <div class="timeline-dot"></div>
+            <div class="timeline-title">Baccalaureat serie D — Mathematiques et Sciences Physiques</div>
+            <div class="timeline-institution">Lycee Vogan II, Vogan, Togo</div>
+            <div class="timeline-date">2023</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Me contacter</h2>
+        <div class="contact-grid reveal">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>yawograceakogo@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+228 92 13 83 16</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Lome, Togo</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/akogoyawograce" target="_blank">github.com/akogoyawograce</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin-in"></i>
+              <a href="https://linkedin.com/in/yawo-grace-akogo-91075b29a" target="_blank">linkedin.com/in/yawo-grace-akogo-91075b29a</a>
+            </div>
+          </div>
+          <form class="contact-form" action="mailto:yawograceakogo@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-main">
+        <div class="footer-name">Akogo Yawo Grace — Developpeur Web Full-stack</div>
+        <div class="footer-nav">
+          <a href="#a-propos">A propos</a>
+          <a href="#competences">Competences</a>
+          <a href="#projets">Projets</a>
+          <a href="#formation">Formation</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/akogoyawograce" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/developpement-dev" target="_blank" aria-label="GitHub projets"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/yawo-grace-akogo-91075b29a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:yawograceakogo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        2025 Akogo Yawo Grace — Concu et developpe a Lome, Togo
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      /* ===== TYPING EFFECT ===== */
+      const words = [
+        'Developpeur Front-end',
+        'Developpeur Back-end',
+        'Etudiant DEFITECH',
+        'Passione de tech africaine'
+      ];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const typingEl = document.getElementById('typingText');
+
+      function typeEffect() {
+        const current = words[wordIndex];
+        if (isDeleting) {
+          typingEl.textContent = current.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typingEl.textContent = current.substring(0, charIndex + 1);
+          charIndex++;
+        }
+
+        let delay = 80;
+
+        if (!isDeleting && charIndex === current.length) {
+          delay = 2000;
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          delay = 400;
+        }
+
+        setTimeout(typeEffect, delay);
+      }
+
+      if (typingEl) typeEffect();
+
+      /* ===== NAVBAR SCROLL SHADOW ===== */
+      const navbar = document.getElementById('navbar');
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      /* ===== ACTIVE NAV LINK ===== */
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '-50% 0px -50% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            navLinks.forEach(function(link) {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === '#' + entry.target.id) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(function(section) {
+        observer.observe(section);
+      });
+
+      /* ===== SCROLL REVEAL ===== */
+      const revealEls = document.querySelectorAll('.reveal');
+
+      const revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      revealEls.forEach(function(el) {
+        revealObserver.observe(el);
+      });
+
+      /* ===== DARK MODE TOGGLE ===== */
+      const themeToggle = document.getElementById('themeToggle');
+      const themeToggleMobile = document.getElementById('themeToggleMobile');
+      const icon = themeToggle.querySelector('i');
+      const iconMobile = themeToggleMobile.querySelector('i');
+      const labelMobile = themeToggleMobile.querySelector('span');
+
+      function setTheme(isDark) {
+        if (isDark) {
+          document.body.classList.add('dark');
+          icon.className = 'fas fa-sun';
+          iconMobile.className = 'fas fa-sun';
+          if (labelMobile) labelMobile.textContent = 'Mode clair';
+        } else {
+          document.body.classList.remove('dark');
+          icon.className = 'fas fa-moon';
+          iconMobile.className = 'fas fa-moon';
+          if (labelMobile) labelMobile.textContent = 'Mode sombre';
+        }
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      }
+
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark') {
+        setTheme(true);
+      }
+
+      themeToggle.addEventListener('click', function() {
+        setTheme(!document.body.classList.contains('dark'));
+      });
+      themeToggleMobile.addEventListener('click', function() {
+        setTheme(!document.body.classList.contains('dark'));
+      });
+
+      /* ===== HAMBURGER MENU ===== */
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      hamburger.addEventListener('click', function() {
+        mobileMenu.classList.toggle('open');
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.remove('open');
+        });
+      });
+
+      /* ===== SMOOTH SCROLL FOR ALL ANCHOR LINKS ===== */
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
