@@ -309,9 +309,12 @@
                 <i class="fab fa-whatsapp"></i>
               </a>
             </div>
-            <div class="contact-item">
+            <div class="contact-item" id="locationItem">
               <i class="fas fa-map-marker-alt"></i>
-              <span>Lome, Togo</span>
+              <span id="locationText">Detection de ma position...</span>
+              <button id="locateBtn" class="locate-btn" aria-label="Detecter ma position" title="Detecter ma position">
+                <i class="fas fa-crosshairs"></i>
+              </button>
             </div>
             <div class="contact-item">
               <i class="fab fa-github"></i>
@@ -510,6 +513,37 @@
           mobileMenu.classList.remove('open');
         });
       });
+
+      /* ===== GEOLOCALISATION ===== */
+      const locateBtn = document.getElementById('locateBtn');
+      const locationText = document.getElementById('locationText');
+
+      if (locateBtn && locationText) {
+        locateBtn.addEventListener('click', function() {
+          if (!navigator.geolocation) {
+            locationText.textContent = 'Geolocalisation non supportee';
+            return;
+          }
+
+          locateBtn.classList.add('loading');
+          locationText.textContent = 'Recherche en cours...';
+
+          navigator.geolocation.getCurrentPosition(
+            function(pos) {
+              const lat = pos.coords.latitude.toFixed(4);
+              const lng = pos.coords.longitude.toFixed(4);
+              locationText.innerHTML = 'Localise a <a href="https://www.google.com/maps?q=' + lat + ',' + lng + '" target="_blank" style="color:var(--primary);text-decoration:underline;">' + lat + ', ' + lng + '</a>';
+              locateBtn.classList.remove('loading');
+              locateBtn.querySelector('i').className = 'fas fa-check';
+            },
+            function(err) {
+              locationText.textContent = 'Impossible de vous localiser';
+              locateBtn.classList.remove('loading');
+            },
+            { enableHighAccuracy: true, timeout: 10000 }
+          );
+        });
+      }
 
       /* ===== SMOOTH SCROLL FOR ALL ANCHOR LINKS ===== */
       document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
