@@ -575,42 +575,13 @@ nav.scrolled {
 .whatsapp-link:hover {
   transform: scale(1.2);
 }
-.locate-btn {
-  background: none;
-  border: 2px solid var(--border);
-  border-radius: var(--radius-btn);
-  width: 34px;
-  height: 34px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+.location-link {
+  color: var(--text-primary);
+  transition: color 0.3s;
+}
+.location-link:hover {
   color: var(--primary);
-  font-size: 0.9rem;
-  transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
-  flex-shrink: 0;
-  margin-left: auto;
-}
-.locate-btn:hover {
-  background: var(--primary);
-  color: #fff;
-  border-color: var(--primary);
-  transform: scale(1.1);
-}
-.locate-btn.loading {
-  pointer-events: none;
-  opacity: 0.6;
-  animation: spin 1s linear infinite;
-}
-.locate-btn.loading i {
-  animation: spin 1s linear infinite;
-}
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-.contact-item .locate-btn i.fa-check {
-  color: inherit;
+  text-decoration: underline;
 }
 .contact-form { flex: 1; }
 .form-group { margin-bottom: 18px; }
